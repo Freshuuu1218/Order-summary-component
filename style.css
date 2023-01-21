@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}main{
+    height: 100vh;
+    width: 100vw;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/images/pattern-background-desktop.svg') no-repeat;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+.wrapper{
+    width: 30vw;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.img-section img{
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.content h1{
+    margin-bottom: .5em;
+    font-size: 1.6em;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.content p{
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    letter-spacing: .03em;
+}
+.plan-container{
+    display: flex;
+    align-items: center;
+    margin: 3.5em 0;
+    justify-content: center;
+}
+.plan-container img{
+    margin-right: 2em;
+}
+.plan-container .plan{
+    margin: 0 4rem 0 -.5rem;
+}
+.plan-container .plan h2{
+    font-size: 18px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    padding-bottom: 0.2em;
+}
+.plan-container .plan h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+.plan-container .change a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+}
+.plan-container .change a:hover{
+    color: rgb(118, 108, 241);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.buttons .proceed{
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    padding: 1em;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2.5em;
+    box-shadow: 0 1.5em 1.5em rgba(130, 152, 214, 0.3);
+}
+
+.buttons .proceed:hover{
+    background-color: rgb(118, 108, 241);
+    cursor: pointer;
+}
+
+.buttons .cancel{
+    background-color: #fff;
+    color: hsl(224, 23%, 55%);
+    border: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.buttons .cancel:hover{
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    main{
+    background: url('/images/pattern-background-mobile.svg') no-repeat;
+    }
+    .wrapper{
+        width: 90vw;
+        padding-bottom: 1em;
+    }
+    .content{
+        padding: 1em;
+    }
+    .content h1{
+        font-size: 24px;
+    }
+    .content p{
+        font-size: 16px;
+        letter-spacing: 0.05em;
+    }
+    .plan-container{
+        margin: 2.5em 0;
+    }
+
+    .buttons .proceed{
+        font-size: 16px;
+        margin-bottom: 2em;
+    }
+    .buttons .cancel{
+        font-size: 16px;
+    }
+}
