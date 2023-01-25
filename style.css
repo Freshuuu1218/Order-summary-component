@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/images/pattern-background-desktop.svg') no-repeat;
+    background: url('./images/pattern-background-desktop.svg') no-repeat;
 }
 body{
     height: 100vh;
